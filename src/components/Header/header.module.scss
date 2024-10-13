@@ -1,0 +1,16 @@
+.wrapper_header{
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper_nav{
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    &>._content{
+        display: flex;
+        justify-content: space-around;
+        width: 336px;
+    }
+}

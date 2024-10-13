@@ -1,95 +1,88 @@
-import Image from "next/image";
+import Header from "@/components/Header";
 import styles from "./page.module.css";
+import Footer from "@/components/Footer";
+import Clickwave from "@/assets/clickwave.svg";
+import Zyphronix from "@/assets/zyphronix.svg";
+import Novasphere from "@/assets/novasphere.svg";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <Header/>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+        <section className={styles.section_1}>
+          <h1>Монетизируйте клиентскую <br/> базу, не снижая NPS</h1>
+          <p>Найдите идеальный баланс выручки 
+            и удовлетворённости пользователей с платформой 
+            рекламной монетизации</p>
+          <div><button>Заказать звонок</button></div>
+        </section>
+        <section className={styles.section_2}>
+          <div>
+            <h2>Дополнительные источники <br/>выручки для разных <br/>компаний</h2>
+          </div>
+          <div>
+            <div className={styles.wrapper_button}>
+              <button>Операторам</button>
+              <button>OTT сервисам</button>
+            </div>
+            <div>
+              <p>Найдите идеальный баланс выручки и<br/>
+                удовлетворённости пользователей с платформой<br/>
+                рекламной монетизации</p>
+            </div>
+          </div>
+        </section>
+        <section className={styles.section_3}>
+            <h2>Баланс между выручкой и удовлетворённостью пользователей</h2>
+            <div className={styles.wrapper_section_3_content}>
+              <div>
+                {/* <Image/> */}
+                <strong><p>Частотность<br/>
+                под контролем</p></strong>
+                <p>Чтобы не ронять NPS<br/>
+                и не увеличивать отток<br/> пользователей</p>
+              </div>
+              <div>
+                {/* <Image/> */}
+              </div>
+              <div>
+                {/* <Image/> */}
+                <strong><p>Максимальная <br/>выручка</p></strong>
+                <p>За счёт заполенения всех<br/> рекламных мест по<br/> высокой цене</p>
+              </div>
+            </div>
+        </section>
+        <section className={styles.section_4}>
+          <h2>Наши партнёры по монетизации</h2>
+                <Image src={Clickwave} alt="#"/>
+                <Image src={Zyphronix} alt="#"/>
+                <Image src={Novasphere} alt="#"/>
+        </section>
+        <section className={styles.section_5}>
+          <div>
+            <h2>Подробные отчёты для вас и<br/> правообладателей</h2>
+            <div>
+              {/* <Image/> */}
+              <p>Выручка, CTR, показы и другие<br/>
+                показатели в реальном времени.</p>
+            </div>
+            <div>
+              {/* <Image/> */}
+              <p>Инструменты контроля качества трафика.</p>
+            </div>
+            <div>
+              {/* <Image/> */}
+              <p>Ежемесячные автоматические отчёты<br/>
+                для каждого правообладателя.</p>
+            </div>
+            <button>Заказать звонок</button>
+          </div>
+                {/* <Image/> */}
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer/>
     </div>
   );
 }
