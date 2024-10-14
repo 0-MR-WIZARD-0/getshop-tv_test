@@ -7,7 +7,6 @@
         width: 1220px;
         &>h2{
             font-size: 32px;
-            // text-align: start;
         }
         &>form{
             margin-top: 64px;
@@ -55,11 +54,6 @@
 
 @media (min-width: 768px) and (max-width: 1439.98px) {
     .wrapper_footer{
-        // width: 100%;
-        // margin: 64px 100px;
-        // margin-left: 100px;
-        // margin-right: 100px;
-        // width: 1220px;
         &>div{
             width: 100%;
             &>form{
@@ -75,8 +69,16 @@
             }
             &>div{
                width: 100%;
+               height: auto;
                 &>input:first-of-type{
+                    margin-top: 32px;
                     width: 100%;
+                }
+                &>div{
+                    margin-top: 32px;
+                }
+                &>button{
+                    margin-top: 64px;
                 }
             }
             }

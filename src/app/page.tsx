@@ -6,6 +6,8 @@ import Zyphronix from "@/assets/zyphronix.svg";
 import Novasphere from "@/assets/novasphere.svg";
 import Glass from "@/assets/glass.png";
 import Arrow from "@/assets/arrow.png";
+import computer from "@/assets/computer.png";
+import group_section_3 from "@/assets/group_section_3.svg";
 import Image from "next/image";
 
 export default function Home() {
@@ -48,8 +50,8 @@ export default function Home() {
                 <p>Чтобы не ронять NPS<br/>
                 и не увеличивать отток<br/> пользователей</p>
               </div>
-              <div>
-                {/* <Image/> */}
+              <div className={styles.wrapper_img}>
+                <Image src={group_section_3} alt="group_section_3"/>
               </div>
               <div>
                 <Image src={Arrow} alt="arrow"/>
@@ -86,7 +88,7 @@ export default function Home() {
             </div>
             <button>Заказать звонок</button>
           </div>
-                {/* <Image/> */}
+          <Image src={computer} alt="PC"/>
         </section>
       </main>
       <Footer/>
