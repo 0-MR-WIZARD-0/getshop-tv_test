@@ -1,5 +1,7 @@
+"use client"
+
 import Header from "@/components/Header";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Footer from "@/components/Footer";
 import Clickwave from "@/assets/clickwave.svg";
 import Zyphronix from "@/assets/zyphronix.svg";
@@ -9,8 +11,16 @@ import Arrow from "@/assets/arrow.png";
 import computer from "@/assets/computer.png";
 import group_section_3 from "@/assets/group_section_3.svg";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [selectedOption, setSelectedOption] = useState<'operator' | 'ott'>('operator');
+
+  const handleClick = (option: 'operator' | 'ott') => {
+    setSelectedOption(option);
+  };
+
   return (
     <div className={styles.page}>
       <Header/>
@@ -29,13 +39,22 @@ export default function Home() {
           </div>
           <div>
             <div className={styles.wrapper_button}>
-              <button>Операторам</button>
-              <button>OTT сервисам</button>
+              <button 
+                onClick={() => handleClick('operator')}
+                className={`${selectedOption === 'operator' ? `${styles.button_active}` : `${styles.button_inactive}`}`}>Операторам</button>
+              <button 
+                onClick={() => handleClick('ott')}
+                className={`${selectedOption === 'ott' ? `${styles.button_active}` : `${styles.button_inactive}`}`}>OTT сервисам</button>
             </div>
             <div>
+            {selectedOption === 'operator' && (
               <p>Найдите идеальный баланс выручки и<br/>
                 удовлетворённости пользователей с платформой<br/>
                 рекламной монетизации</p>
+            )}
+            {selectedOption === 'ott' && (
+              <p>Дополнительные возможности обогащения данных<br/> об аудитории и монетизации</p>
+            )}
             </div>
           </div>
         </section>

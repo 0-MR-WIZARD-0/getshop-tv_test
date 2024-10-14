@@ -1,3 +1,12 @@
+.button_inactive{
+    background-color:white;
+    color:black;
+}
+.button_active {
+  background-color: black;
+  color: white;
+}
+
 .main{
   display: flex;
   flex-direction: column;
@@ -52,6 +61,7 @@
       background-color: white;
       border-radius: 10px;
       &>button{
+        border: none;
         border-radius: 10px;
         width: 276px;
         padding: 10px 64px;
@@ -165,7 +175,7 @@
       &>button{
         margin-top: 80px;
         padding: 12px 45px;
-        background-color: #FF5900 ;
+        background-color:black;
         color:white;
         border: none;
         border-radius: 10px;
@@ -173,6 +183,7 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1439.98px) {
   .main{
     &>section {
@@ -230,7 +241,6 @@
       }
       &>h2{
         font-size: 28px;
-        text-align: center;
       }
       .wrapper_section_3_content{
         .wrapper_img{
@@ -268,6 +278,141 @@
         }
         &>div>p{
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .main{
+    &>section {
+      width: 90%;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .section_1{
+      &>h1{
+        margin-top: 48px;
+        font-size: 36px;
+      }
+      &>p{
+        font-size: 16px;
+        width: 100%;
+      } 
+      &>div>button{
+        margin-top: 112px;
+        width: 100%;
+        padding: 12px 0;
+      }
+      &>img{
+        height: 500px;
+      }
+    }
+    .section_2{
+      flex-direction: column;
+      margin-top: 80px;
+      &>div:first-of-type{
+        &>h2{
+          font-size: 24px;
+        }
+      }
+      &>div:last-of-type{
+        &>div>p{
+          font-size: 16px;
+        }
+      }
+      .wrapper_button{
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 22px;
+        &>button{
+          border-radius: 10px;
+          width: 50%;
+          padding: 10px 0px;
+        }
+      }
+    }
+    .section_3{
+      margin-top: 48px;
+      margin-bottom: 48px;
+      height: max-content;
+      &>div:first-of-type{
+        height: 900px;
+      }
+      &>h2{
+        margin-top: 48px;
+        font-size: 24px;
+      }
+      .wrapper_section_3_content{
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        margin-top: 30px;
+        .wrapper_img{
+          &>img{
+            margin-bottom: 0;
+            transform: rotate(90deg);
+            width: 300px;
+          }
+        }
+        &>div>strong>p{
+          font-size: 20px;
+          margin-bottom: 16px;
+        }
+        &>div>p{
+          font-size: 14px;
+        }
+        &>div:last-of-type{
+          margin-bottom: 48px;
+        }
+      }
+    }
+    .section_4{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      flex-direction: column;
+      height: max-content;
+
+      &>div{
+        height: max-content;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items:center;
+        &>img{
+          width: 50%;
+        }
+        &>img+img{
+          margin-left: 0px;
+        }
+      }
+      &>h2{
+        font-size: 20px;
+      }
+    }
+    .section_5{
+      height: max-content;
+      &>img{
+        margin-top: 50px;
+        position: relative;
+        width: 500px;
+        height: 335px;
+      }
+      &>div:first-of-type{
+        height: 800px;
+      }
+      &>div:last-of-type{
+        &>h2{
+          font-size: 24px;
+          width: 288px;
+        }
+        &>div>p{
+          font-size: 14px;
+        }
+        &>button{
+          margin-top: 32px;
+          width: 100%;
         }
       }
     }

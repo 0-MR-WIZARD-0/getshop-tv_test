@@ -42,7 +42,7 @@
                 &>button{
                     padding: 12px 0;
                     width: 100%;
-                    background-color: #FF5900 ;
+                    background-color:black;
                     color:white;
                     border: none;
                     border-radius: 10px;
@@ -81,6 +81,41 @@
                     margin-top: 64px;
                 }
             }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .wrapper_footer{
+        margin-bottom: 32px;
+        margin-top: 70px;
+        &>div{
+            width: 90%;
+            &>h2{
+                font-size: 24px;
+            }
+            &>form{
+                display: flex;
+                margin-top: 32px;
+                flex-direction: column;
+                &>textarea{
+                    height: 216px;
+                    width: 90%;
+                }&>div{
+                    width: 100%;
+                    height: auto;
+                     &>input:first-of-type{
+                         margin-top: 32px;
+                         width: 90%;
+                     }
+                     &>div{
+                         margin-top: 32px;
+                     }
+                     &>button{
+                         margin-top: 32px;
+                     }
+                 }
             }
         }
     }
