@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Logo from "@/assets/logo.svg"
 import styles from "./header.module.scss" 
 
-
 const Header = () => {
   return (
     <header className={styles.wrapper_header}>

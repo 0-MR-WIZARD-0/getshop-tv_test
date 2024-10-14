@@ -1,5 +1,5 @@
 .wrapper_header{
-    margin: 32px;
+    margin: 32px 32px 0 32px;
     display: flex;
     justify-content: center;
 }
@@ -12,5 +12,8 @@
         display: flex;
         justify-content: space-around;
         width: 336px;
+        &>a{
+            font-size: 14px;
+        }
     }
 }

@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import Clickwave from "@/assets/clickwave.svg";
 import Zyphronix from "@/assets/zyphronix.svg";
 import Novasphere from "@/assets/novasphere.svg";
+import Glass from "@/assets/glass.png";
+import Arrow from "@/assets/arrow.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
       <Header/>
       <main className={styles.main}>
         <section className={styles.section_1}>
+          <Image src={Glass} alt="glass"/>
           <h1>Монетизируйте клиентскую <br/> базу, не снижая NPS</h1>
           <p>Найдите идеальный баланс выручки 
             и удовлетворённости пользователей с платформой 
@@ -35,10 +38,11 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section_3}>
+            <div></div>
             <h2>Баланс между выручкой и удовлетворённостью пользователей</h2>
             <div className={styles.wrapper_section_3_content}>
               <div>
-                {/* <Image/> */}
+                <Image src={Arrow} alt="arrow"/>
                 <strong><p>Частотность<br/>
                 под контролем</p></strong>
                 <p>Чтобы не ронять NPS<br/>
@@ -48,7 +52,7 @@ export default function Home() {
                 {/* <Image/> */}
               </div>
               <div>
-                {/* <Image/> */}
+                <Image src={Arrow} alt="arrow"/>
                 <strong><p>Максимальная <br/>выручка</p></strong>
                 <p>За счёт заполенения всех<br/> рекламных мест по<br/> высокой цене</p>
               </div>
@@ -56,24 +60,27 @@ export default function Home() {
         </section>
         <section className={styles.section_4}>
           <h2>Наши партнёры по монетизации</h2>
+          <div>
                 <Image src={Clickwave} alt="#"/>
                 <Image src={Zyphronix} alt="#"/>
                 <Image src={Novasphere} alt="#"/>
+          </div>
         </section>
         <section className={styles.section_5}>
+          <div></div>
           <div>
             <h2>Подробные отчёты для вас и<br/> правообладателей</h2>
             <div>
-              {/* <Image/> */}
+              <Image src={Arrow} alt="arrow"/>
               <p>Выручка, CTR, показы и другие<br/>
                 показатели в реальном времени.</p>
             </div>
             <div>
-              {/* <Image/> */}
+              <Image src={Arrow} alt="arrow"/>
               <p>Инструменты контроля качества трафика.</p>
             </div>
             <div>
-              {/* <Image/> */}
+              <Image src={Arrow} alt="arrow"/>
               <p>Ежемесячные автоматические отчёты<br/>
                 для каждого правообладателя.</p>
             </div>

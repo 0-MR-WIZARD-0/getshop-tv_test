@@ -1,0 +1,1 @@
+export const wrapper_footer: string;

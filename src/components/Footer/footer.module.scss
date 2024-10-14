@@ -1,0 +1,85 @@
+.wrapper_footer{
+    margin: 90px 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &>div{
+        width: 1220px;
+        &>h2{
+            font-size: 32px;
+            // text-align: start;
+        }
+        &>form{
+            margin-top: 64px;
+            display: flex;
+            justify-content: space-between;
+            &>textarea{
+                height: 216px;
+                width: 560px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                &::placeholder{
+                    padding: 20px 0 0 20px;
+                }
+            }
+            &>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 216px;
+                &>input:first-of-type{
+                    width: 560px;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    background: none;
+                    padding: 10px 0;
+                }
+                &>div{
+                    &>label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+                &>button{
+                    padding: 12px 0;
+                    width: 100%;
+                    background-color: #FF5900 ;
+                    color:white;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439.98px) {
+    .wrapper_footer{
+        // width: 100%;
+        // margin: 64px 100px;
+        // margin-left: 100px;
+        // margin-right: 100px;
+        // width: 1220px;
+        &>div{
+            width: 100%;
+            &>form{
+               flex-direction: column; 
+               align-items:center;
+               width: 100%;
+               &>textarea{
+                height: 216px;
+                width: 100%;
+                &::placeholder{
+                    padding: 20px 0 0 20px;
+                }
+            }
+            &>div{
+               width: 100%;
+                &>input:first-of-type{
+                    width: 100%;
+                }
+            }
+            }
+        }
+    }
+}
