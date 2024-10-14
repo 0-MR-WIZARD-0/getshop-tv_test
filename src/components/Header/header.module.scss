@@ -3,17 +3,55 @@
     display: flex;
     justify-content: center;
 }
+
 .wrapper_nav{
     padding: 16px 0;
     display: flex;
     justify-content: space-between;
     width: 1220px;
+    .burger{
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        z-index: 100;
+    }
     &>._content{
         display: flex;
         justify-content: space-around;
         width: 336px;
         &>a{
             font-size: 14px;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    &.open{
+        right: 0; 
+    }
+    &>ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 50%;
+        &>li{
+            margin-left:20px;
+            font-size: 18px;
+        }
+        &>li+li{
+            margin-top: 20px;
         }
     }
 }
